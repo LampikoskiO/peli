@@ -1,0 +1,68 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  color: #808080;
+}
+
+.container {
+  height: 600px;
+  max-height: 80%;
+  width: 800px;
+  max-width: 80%;
+  background-color: #101010;
+  padding: 10px;
+  box-shadow: 0 0 10px;
+}
+
+.yla-osa {
+  width: 100%;
+  overflow: hidden;
+  max-height: 30%;
+  height: 100%;
+}
+
+.image {
+  max-height: 100%;
+  height: 100%;
+  float: left;
+}
+
+img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.location {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fbeee4;
+}
+
+.text-container {
+  height: 200px;
+  padding: 5px;
+}
+
+#options-text {
+  margin-top: 3%;
+}
+
+.vaihtoehdot {
+  padding: 1%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.vaihtoehdot:hover {
+  color: yellow;
+}

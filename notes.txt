@@ -1,0 +1,78 @@
+javascript prototypes
+
+tehdään funktio location, laitetaan siihen options
+sitten voidaan vaan joka eri "huoneeseen" lisätä vaihtoehdot lennossa
+
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+
+var Location = 0;
+
+var option1 = document.getElementsByClassName("vaihtoehto1");
+var option2 = document.getElementsByClassName("vaihtoehto2");
+var option3 = document.getElementsByClassName("vaihtoehto3");
+var option4 = document.getElementsByClassName("vaihtoehto4");
+
+
+
+(blabla:t funktioiden sisällä pitää koodin siistinä)
+
+x= 0 (variable avulla pidetään lukua siitä missä mennään)
+--------------------------------------------------------------------------------
+
+Funktio 1 x=1
+  blabla
+    Funktio 1,1 x = 1,1 
+  blabla
+    Funktio 1,2 x= 1,2
+  blabla
+    Funktio 1,3 x= 1,3
+  blabla
+    Funktio 1,4 x= 1,4
+      Funktio 1 x= 1
+
+!! Problem: one click jumps to the last "file".
+
+how to stop and ask for a new input after every function  CACHE PROBLEM, FIRST RELOAD WORKS
+
+When going back, print not working
+
+!!
+--------------------------------------------------------------------------------
+/*$('.vaihtoehto1').click(function() {
+    document.getElementById("text").textContent = "newtext";
+});
+
+function Option(first, second, third, third) {
+  this.firstOption = first;
+  this.secondOption = second;
+  this.thirdOption = third;
+  this.fourthOption = fourth;
+}
+
+var Tavern = new Option("Talk to the man with a scar", "Order a drink", "Talk to the red haired woman", "Exit");
+var Bartender = new Option("I would like a glass of milk", "I would like a jug of ale", "", "Nothing, thank you");
+var Street1 = new Option("Enter the Tavern", "Go to the Docks", "Enter the backalley", "Go to the city centre.");
+
+function clicked('.vaihtoehdot') {
+
+    if ('vaihtoehto1') {
+        document.getElementById("text").textContent = "Them man with a scar seems to be passed out";
+     }
+    
+    else if ('vaihtoehto2') {
+        document.getElementById("text").textContent = "The bartender asks you: What would you like to have?";
+
+     }
+    
+    else if ('vaihtoehto3') { }
+    
+    else if ('vaihtoehto4') {}
+};*/
