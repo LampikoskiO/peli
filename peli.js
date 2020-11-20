@@ -1,9 +1,32 @@
 
 var nyt = 0;
 var location = [];
+var location = [[]];
+location[0] = [];
+location[1] = [];
+location[2] = [];
+ 
+location[0]['options'] = [];
+location[1]['options'] = [];
+location[2]['options'] = [];
 
-location[0]['sijainti'] = 'huone';
-location[0]['image'] = '<img src="./gloomy_image.jpg" alt="huone"></img>';
+location[0]['options'][0] = [];
+location[0]['options'][1] = [];
+location[0]['options'][2] = [];
+location[0]['options'][3] = [];
+
+location[1]['options'][0] = [];
+location[1]['options'][1] = [];
+location[1]['options'][2] = [];
+location[1]['options'][3] = [];
+
+location[2]['options'][0] = [];
+location[2]['options'][1] = [];
+location[2]['options'][2] = [];
+location[2]['options'][3] = [];
+
+location[0]['sijainti'] = 'huone 1';
+location[0]['image'] = '<img src="./gloomy_room.jpg" alt="huone"></img>';
 location[0]['teksti'] = 'Tervetuloaekaan huoneeseen';
 location[0]['options'][0]['txt'] = 'Mene toiseen';
 location[0]['options'][0]['go'] = '1';
@@ -14,9 +37,9 @@ location[0]['options'][2]['go'] = '1';
 location[0]['options'][3]['txt'] = 'Mene toiseen';
 location[0]['options'][3]['go'] = '1';
 
-location[1]['sijainti'] = 'metsä';
+location[1]['sijainti'] = 'metsä 2';
 location[1]['image'] = '<img src="./imagetest.jpg" alt="metsä"></img>';
-location[1]['teksti'] = 'Tervetuloa metsään';
+location[1]['teksti'] = 'Tervetuloa metsään 2';
 location[1]['options'][0]['txt'] = 'Mene takaisin';
 location[1]['options'][0]['go'] = '0';
 location[1]['options'][1]['txt'] = 'Mene eteenpäin';
@@ -26,8 +49,20 @@ location[1]['options'][2]['go'] = '2';
 location[1]['options'][3]['txt'] = '';
 location[1]['options'][3]['go'] = '2';
 
+location[2]['sijainti'] = 'metsä 3';
+location[2]['image'] = '<img src="./imagetest.jpg" alt="metsä"></img>';
+location[2]['teksti'] = 'Tervetuloa metsään UUDESTAAN 3';
+location[2]['options'][0]['txt'] = 'Mene takaisin';
+location[2]['options'][0]['go'] = '1';
+location[2]['options'][1]['txt'] = 'Mene eteenpäin';
+location[2]['options'][1]['go'] = '2';
+location[2]['options'][2]['txt'] = '';
+location[2]['options'][2]['go'] = '2';
+location[2]['options'][3]['txt'] = '';
+location[2]['options'][3]['go'] = '2';
 
-$document.ready(function () { 
+
+$(document).ready(function () { 
     gameloop();
 });
 
